@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import Contact3 from "@/components/sections/contacts/Contact3";
 import ContactTop from "@/components/sections/contacts/ContactTop";
@@ -17,10 +17,9 @@ export default function Contact() {
 				<div id="smooth-content">
 					<main>
 						<HeaderSpace />
-						<HeroInner title={"Contact Us"} text={"Contact Us"} />
+						<HeroInner title={"Kontak"} text={"Kontak"} />
 						<ContactTop />
 						<Contact3 />
-						<Cta />
 					</main>
 					<Footer />
 				</div>

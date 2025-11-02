@@ -8,10 +8,10 @@ const ContactTop = () => {
 					<div className="col-12">
 						<div className="sec-heading text-center">
 							<span className="sub-title wow fadeInUp" data-wow-delay=".1s">
-								<i className="tji-box"></i>Contact info
+								<i className="tji-box"></i>Informasi Kontak
 							</span>
 							<h2 className="sec-title title-anim">
-								<span>Reach</span> Out to Us
+								<span>Hubungi</span> Kami
 							</h2>
 						</div>
 					</div>
@@ -25,8 +25,12 @@ const ContactTop = () => {
 							<div className="contact-icon">
 								<i className="tji-location-3"></i>
 							</div>
-							<h3 className="contact-title">Our Location</h3>
-							<p>993 Renner Burg, West Rond, MT 94251-030</p>
+							<h3 className="contact-title">Alamat</h3>
+							<ul className="contact-list">
+								<li>
+									<Link href="https://maps.app.goo.gl/JCEBDt3i6exx1ybx9" target="_blank" rel="noopener noreferrer">Jl. Raya Daan Mogot KM 14, Apt. Green Park View RD. 52</Link>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div className="col-xl-3 col-lg-6 col-sm-6">
@@ -37,13 +41,13 @@ const ContactTop = () => {
 							<div className="contact-icon">
 								<i className="tji-envelop"></i>
 							</div>
-							<h3 className="contact-title">Email us</h3>
+							<h3 className="contact-title">Email</h3>
 							<ul className="contact-list">
 								<li>
-									<Link href="mailto:support@bexon.com">support@bexon.com</Link>
+									<Link href="mailto:gunturmandalasakti@yahoo.com">gunturmandalasakti@yahoo.com</Link>
 								</li>
 								<li>
-									<Link href="mailto:info@bexon.com">info@bexon.com</Link>
+									<Link href="mailto:contact@gunturmandalasakti.com">contact@gunturmandalasakti.com</Link>
 								</li>
 							</ul>
 						</div>
@@ -56,13 +60,13 @@ const ContactTop = () => {
 							<div className="contact-icon">
 								<i className="tji-phone"></i>
 							</div>
-							<h3 className="contact-title">Call us</h3>
+							<h3 className="contact-title">Telepon</h3>
 							<ul className="contact-list">
 								<li>
-									<Link href="tel:10095447818">+1 (009) 544-7818</Link>
+									<Link href="tel:02138764199">(021) 38764199</Link>
 								</li>
 								<li>
-									<Link href="tel:10098801810">+1 (009) 880-1810</Link>
+									<Link href="tel:02159582830">(021) 59582830</Link>
 								</li>
 							</ul>
 						</div>
@@ -75,15 +79,15 @@ const ContactTop = () => {
 							<div className="contact-icon">
 								<i className="tji-chat"></i>
 							</div>
-							<h3 className="contact-title">Live chat</h3>
+							<h3 className="contact-title">WhatsApp</h3>
 							<ul className="contact-list">
 								<li>
-									<Link href="mailto:livechat@bexon.com">
-										livechat@bexon.com
+									<Link href="http://wa.me/6285317555542">
+										+62 853-1755-5542
 									</Link>
 								</li>
 								<li className="active">
-									<Link href="/contact">Need help?</Link>
+									<Link href="http://wa.me/6285317555542">Butuh bantuan?</Link>
 								</li>
 							</ul>
 						</div>

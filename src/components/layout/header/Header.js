@@ -77,12 +77,12 @@ const Header = ({
 									{headerType === 4 ? (
 										<Link
 											className="header-contact d-none d-xl-inline-flex"
-											href="tel:18884521505"
+											href="tel:02138764199"
 										>
 											<span className="call-icon">
 												<i className="tji-phone"></i>
 											</span>
-											<span className="call-text">1-888-452-1505</span>
+											<span className="call-text">(021) 38764199</span>
 										</Link>
 									) : (
 										<div className="header-search">
@@ -128,7 +128,7 @@ const Header = ({
 									)}
 
 									<div className="header-button">
-										<ButtonPrimary text={"Let’s Talk"} url={"/contact"} />
+										<ButtonPrimary text={"Hubungi Kami"} url={"/contact"} />
 									</div>
 									{headerType !== 3 && (
 										<div
@@ -169,7 +169,7 @@ const Header = ({
 													<input
 														className="search-form-input"
 														type="text"
-														placeholder="Type Words and Hit Enter"
+														placeholder="Ketik sesuatu, lalu tekan Enter."
 														required
 													/>
 													<button type="submit">
