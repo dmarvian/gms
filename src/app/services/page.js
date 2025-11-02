@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer from "@/components/layout/footer/Footer2";
 import Header from "@/components/layout/header/Header";
 import Brands1 from "@/components/sections/brands/Brands1";
 import Contact2 from "@/components/sections/contacts/Contact2";
@@ -19,12 +19,9 @@ export default function Services() {
 				<div id="smooth-content">
 					<main>
 						<HeaderSpace />
-						<HeroInner title={"Services"} text={"Services"} />
+						<HeroInner title={"Layanan"} text={"Layanan"} />
 						<ServicesPrimary />
-						<Contact2 />
-						<PricingPlan type={3} />
 						<Brands1 type={2} />
-						<Cta />
 					</main>
 					<Footer />
 				</div>

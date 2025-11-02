@@ -17,7 +17,7 @@ const HeroInner = ({ title, text, breadcrums = [] }) => {
 									<i className="tji-home"></i>
 								</span>
 								<span>
-									<Link href="/">Home</Link>
+									<Link href="/">Beranda</Link>
 								</span>
 								<span>
 									<i className="tji-arrow-right"></i>
