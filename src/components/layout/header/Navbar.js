@@ -68,7 +68,7 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 						</Link>
 					</li>
 					<li className={contactNav?.isActive ? "current-menu-ancestor" : ""}>
-						<Link href="/">
+						<Link href={contactNav?.path ? contactNav?.path : "#"}>
 							{contactNav?.name ? contactNav?.name : "Kontak"}
 						</Link>
 					</li>

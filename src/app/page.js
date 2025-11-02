@@ -9,7 +9,7 @@ import About2 from "@/components/sections/about/About2";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
 
-export default function Home2() {
+export default function Beranda() {
 	return (
 		<div>
 			<BackToTop />
