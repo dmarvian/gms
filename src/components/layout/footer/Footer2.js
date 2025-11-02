@@ -64,7 +64,7 @@ const Footer2 = () => {
 								<h5 className="title">Informasi</h5>
 								<ul>
 									<li>
-										<Link href="/contact">Kontak</Link>
+										<Link href="/">Kontak</Link>
 									</li>
 									<li>
 										<Link href="/">Lowongan Pekerjaan</Link>

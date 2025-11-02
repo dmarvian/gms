@@ -70,13 +70,13 @@ const MobileNavbar = () => {
 									: ""}
 							</MobileMenuItem>
 							<li>
-								<Link href={blogNav?.path ? blogNav?.path : "/blogs"}>
+								<Link href="/">
 									{" "}
 									{blogNav?.name ? blogNav?.name : "Artikel"}
 								</Link>
 							</li>
 							<li className="mean-last">
-								<Link href={contactNav?.path ? contactNav?.path : "/contact"}>
+								<Link href="/">
 									{" "}
 									{contactNav?.name ? contactNav?.name : "Contact"}
 								</Link>
