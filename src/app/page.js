@@ -4,7 +4,7 @@ import Mitra from "@/components/sections/gms-mitra";
 import MengapaGMS from "@/components/sections/gms-mengapa";
 import Layanan from "@/components/sections/gms-layanan";
 import Artikel from "@/components/sections/gms-artikel";
-import Footer2 from "@/components/layout/footer/Footer2";
+import Footer2 from "@/components/layout/footer/gms-footer";
 import About2 from "@/components/sections/about/About2";
 import BackToTop from "@/components/shared/others/BackToTop";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";

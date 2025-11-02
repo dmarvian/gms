@@ -1,4 +1,4 @@
-import Footer2 from "@/components/layout/footer/Footer2";
+import Footer2 from "@/components/layout/footer/gms-footer";
 import Header from "@/components/layout/header/Header";
 import About2 from "@/components/sections/about/About2";
 import Blogs2 from "@/components/sections/blogs/Blogs2";

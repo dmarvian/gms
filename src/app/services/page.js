@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer2";
+import Footer from "@/components/layout/footer/gms-footer";
 import Header from "@/components/layout/header/Header";
 import Brands1 from "@/components/sections/brands/Brands1";
 import Contact2 from "@/components/sections/contacts/Contact2";

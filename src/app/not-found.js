@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer from "@/components/layout/footer/gms-footer";
 import Header from "@/components/layout/header/Header";
 import Cta from "@/components/sections/cta/Cta";
 import ErrorPrimary from "@/components/sections/error/ErrorPrimary";
@@ -15,10 +15,7 @@ export default function NotFound() {
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>
-						<HeaderSpace />
-						<HeroInner title={"Error 404"} text={"Error 404"} />
 						<ErrorPrimary />
-						<Cta />
 					</main>
 					<Footer />
 				</div>

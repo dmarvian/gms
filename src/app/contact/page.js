@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer2";
+import Footer from "@/components/layout/footer/gms-footer";
 import Header from "@/components/layout/header/Header";
 import Contact3 from "@/components/sections/contacts/Contact3";
 import ContactTop from "@/components/sections/contacts/ContactTop";

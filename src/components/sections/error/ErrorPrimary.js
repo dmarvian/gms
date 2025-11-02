@@ -19,14 +19,13 @@ const ErrorPrimary = () => {
 									/>
 								</div>
 								<h2 className="error-title title-anim">
-									Oooop! Page not found
+									Halaman Tidak Ditemukan
 								</h2>
 								<div className="error-desc">
-									You are here because you entered the address of a page that no
-									longer exists or has been moved to a different address
+									Halaman ini mungkin telah dipindahkan atau dihapus.
 								</div>
 								<ButtonPrimary
-									text={"Go to Home Page"}
+									text={"Kembali ke Beranda"}
 									url={"/"}
 									className={"error-btn"}
 								/>
