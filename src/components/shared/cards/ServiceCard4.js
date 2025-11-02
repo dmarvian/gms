@@ -23,7 +23,7 @@ const ServiceCard4 = ({ service, idx, lastItem }) => {
 				</h4>
 				<p className="desc">{desc}</p>
 				<ButtonPrimary
-					text={"Learn More"}
+					text={"Lihat Detail"}
 					url={`/services/${id}`}
 					isTextBtn={true}
 				/>
