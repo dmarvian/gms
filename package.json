@@ -1,6 +1,6 @@
 {
-	"name": "bexon",
-	"version": "0.1.0",
+	"name": "GMS Company Profile",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbopack",
