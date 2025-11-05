@@ -72,7 +72,7 @@ const Hero = () => {
 									<h1 className="slider-title">{title}</h1>
 									<div className="slider-desc">{desc}</div>
 									<div className="slider-btn">
-										<ButtonPrimary text={"Lihat Layanan Kami"} url={"/services"} />
+										<ButtonPrimary text={"Lihat Layanan Kami"} url={"/layanan"} />
 									</div>
 								</div>
 							</div>
@@ -129,7 +129,7 @@ const Hero = () => {
 					className="circle-text"
 					style={{ backgroundImage: "url('/images/hero/circle-text.webp')" }}
 				></span>
-				<Link className="circle-icon" href="/services">
+				<Link className="circle-icon" href="/layanan">
 					<i className="tji-arrow-down-big"></i>
 				</Link>
 			</div>

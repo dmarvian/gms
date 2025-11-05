@@ -20,7 +20,7 @@ const ServiceCard1 = ({ service, idx, lastItem }) => {
 			</div>
 			<div className="service-content">
 				<h4 className="title">
-					<Link href={`/services/${id}`}>{title}</Link>
+					<Link href={`/layanan/${id}`}>{title}</Link>
 				</h4>
 				<p className="desc">
 					Through a combination of data-driven insights and innovative
@@ -28,7 +28,7 @@ const ServiceCard1 = ({ service, idx, lastItem }) => {
 				</p>
 				<ButtonPrimary
 					text={"Learn More"}
-					url={`/services/${id}`}
+					url={`/layanan/${id}`}
 					isTextBtn={true}
 				/>
 			</div>

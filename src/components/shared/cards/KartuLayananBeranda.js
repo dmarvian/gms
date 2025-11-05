@@ -11,7 +11,7 @@ const KartuLayanan = ({ service, idx, lastItem }) => {
 						<i className={iconName ? iconName : "tji-service-1"}></i>
 					</div>
 					<h4 className="title">
-						<Link href={`/services/${id}`}>{title}</Link>
+						<Link href={`/layanan/${id}`}>{title}</Link>
 					</h4>
 				</div>
 				<div className="service-content">

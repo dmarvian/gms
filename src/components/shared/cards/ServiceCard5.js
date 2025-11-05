@@ -26,10 +26,10 @@ const ServiceCard5 = ({ service, idx, lastItemIdx }) => {
 				<div className="service-content">
 					<span className="no">{modifyNumber(idx + 1)}.</span>
 					<h3 className="title">
-						<Link href={`/services/${id}`}>{title}</Link>
+						<Link href={`/layanan/${id}`}>{title}</Link>
 					</h3>
 					<p className="desc">{desc}</p>
-					<ButtonPrimary text={"Learn More"} url={`/services/${id}`} />
+					<ButtonPrimary text={"Learn More"} url={`/layanan/${id}`} />
 				</div>
 			</div>
 			<div className="service-img">

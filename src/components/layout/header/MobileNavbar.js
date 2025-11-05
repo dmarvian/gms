@@ -1,17 +1,16 @@
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
-import getNavItems from "@/libs/getNavItems";
+import getNavigasi from "@/libs/getNavigasi";
 import Image from "next/image";
 import Link from "next/link";
 import MobileMenuItem from "./MobileMenuItem";
 
 const MobileNavbar = () => {
-	const navItems = getNavItems();
-	const homeNav = navItems[0];
-	const pagesNav = navItems[1];
-	const serviceNav = navItems[2];
-	const portfolioNav = navItems[3];
-	const blogNav = navItems[4];
-	const contactNav = navItems[5];
+	const navItems = getNavigasi();
+	const NavigasiBeranda = navItems[0];
+	const NavigasiTentang = navItems[1];
+	const NavigasiLayanan = navItems[2];
+	const NavigasiArtikel = navItems[3];
+	const NavigasiKontak = navItems[4];
 	return (
 		<div className="hamburger_menu">
 			<div className="mobile_menu mean-container">
@@ -30,18 +29,24 @@ const MobileNavbar = () => {
 					<nav className="mean-nav">
 						<ul>
 							<li>
-								<Link href={homeNav?.path ? homeNav?.path : "/"}>
+								<Link href={NavigasiBeranda?.path ? NavigasiBeranda?.path : "/"}>
 									{" "}
-									{homeNav?.name ? homeNav?.name : "Beranda"}
+									{NavigasiBeranda?.name ? NavigasiBeranda?.name : "Beranda"}
+								</Link>
+							</li>
+							<li>
+								<Link href={NavigasiTentang?.path ? NavigasiTentang?.path : "/"}>
+									{" "}
+									{NavigasiTentang?.name ? NavigasiTentang?.name : "Beranda"}
 								</Link>
 							</li>
 							<MobileMenuItem
-								text={serviceNav?.name}
-								url={serviceNav?.path ? serviceNav?.path : "#"}
+								text={NavigasiLayanan?.name}
+								url={NavigasiLayanan?.path ? NavigasiLayanan?.path : "#"}
 								submenuClass={"mega-menu-service"}
 							>
-								{serviceNav?.submenu?.length
-									? serviceNav?.submenu?.map((item, idx) => (
+								{NavigasiLayanan?.submenu?.length
+									? NavigasiLayanan?.submenu?.map((item, idx) => (
 											<li key={idx}>
 												<Link
 													className="mega-menu-service-single"
@@ -70,15 +75,15 @@ const MobileNavbar = () => {
 									: ""}
 							</MobileMenuItem>
 							<li>
-								<Link href="/">
+								<Link href={NavigasiArtikel?.path ? NavigasiArtikel?.path : "/"}>
 									{" "}
-									{blogNav?.name ? blogNav?.name : "Artikel"}
+									{NavigasiArtikel?.name ? NavigasiArtikel?.name : "Artikel"}
 								</Link>
 							</li>
 							<li className="mean-last">
-								<Link href="/">
+								<Link href={NavigasiKontak?.path ? NavigasiKontak?.path : "/"}>
 									{" "}
-									{contactNav?.name ? contactNav?.name : "Contact"}
+									{NavigasiKontak?.name ? NavigasiKontak?.name : "Kontak"}
 								</Link>
 							</li>
 						</ul>

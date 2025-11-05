@@ -1,9 +1,9 @@
 
 import navItems from "../../public/fakedata/nav-items"
 
-const getNavItems = () => {
+const getNavigasi = () => {
 
     return navItems?navItems:[]
 };
 
-export default getNavItems;
+export default getNavigasi;

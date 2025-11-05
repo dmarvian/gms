@@ -69,7 +69,7 @@ const ServicesDetailsPrimary = ({ option }) => {
 									style={{ visibility: isPrevItem ? "visible" : "hidden" }}
 								>
 									<div className="tj-nav-post__nav prev_post">
-										<Link href={isPrevItem ? `/services/${prevId}` : "#"}>
+										<Link href={isPrevItem ? `/layanan/${prevId}` : "#"}>
 											<span>
 												<i className="tji-arrow-left"></i>
 											</span>
@@ -77,7 +77,7 @@ const ServicesDetailsPrimary = ({ option }) => {
 										</Link>
 									</div>
 								</div>
-								<Link href={"/services"} className="tj-nav-post__grid">
+								<Link href={"/layanan"} className="tj-nav-post__grid">
 									<i className="tji-window"></i>
 								</Link>
 								{/* <!-- next post --> */}
@@ -86,7 +86,7 @@ const ServicesDetailsPrimary = ({ option }) => {
 									style={{ visibility: isNextItem ? "visible" : "hidden" }}
 								>
 									<div className="tj-nav-post__nav next_post">
-										<Link href={isNextItem ? `/services/${nextId}` : "#"}>
+										<Link href={isNextItem ? `/layanan/${nextId}` : "#"}>
 											Selanjutnya
 											<span>
 												<i className="tji-arrow-right"></i>
@@ -111,7 +111,7 @@ const ServicesDetailsPrimary = ({ option }) => {
 												<li key={idx}>
 													<Link
 														className={`${currentId === id ? "active" : ""}`}
-														href={`/services/${id}`}
+														href={`/layanan/${id}`}
 													>
 														{shortTitle}
 														<span className="icon">

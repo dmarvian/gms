@@ -1,39 +1,61 @@
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import useActiveLink from "@/hooks/useActiveLink";
-import getNavItems from "@/libs/getNavItems";
+import getNavigasi from "@/libs/getNavigasi";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = ({ headerType, isStickyHeader }) => {
 	const makeActiveLink = useActiveLink();
-	const navItems = getNavItems();
-	const homeNav = makeActiveLink(navItems[0]);
-	const pagesNav = makeActiveLink(navItems[1]);
-	const serviceNav = makeActiveLink(navItems[2]);
-	const portfolioNav = makeActiveLink(navItems[3]);
-	const blogNav = makeActiveLink(navItems[4]);
-	const contactNav = makeActiveLink(navItems[5]);
+	const navItems = getNavigasi();
+	const NavigasiBeranda = makeActiveLink(navItems[0]);
+	const NavigasiTentang = makeActiveLink(navItems[1]);
+	const NavigasiLayanan = makeActiveLink(navItems[2]);
+	const NavigasiArtikel = makeActiveLink(navItems[3]);
+	const NavigasiKontak = makeActiveLink(navItems[4]);
 
 	return (
 		<div className="menu-area d-none d-lg-inline-flex align-items-center">
 			<nav id="mobile-menu" className="mainmenu">
 				<ul>
-					<li className={homeNav?.isActive ? "current-menu-ancestor" : ""}>
-						<Link href={homeNav?.path ? homeNav?.path : "#"}>
-							{homeNav?.name ? homeNav?.name : "Beranda"}
+					<li className={NavigasiBeranda?.isActive ? "current-menu-ancestor" : ""}>
+						<Link href={NavigasiBeranda?.path ? NavigasiBeranda?.path : ""}>
+							{NavigasiBeranda?.name ? NavigasiBeranda?.name : "Beranda"}
 						</Link>
 					</li>
 					<li
 						className={`has-dropdown ${
-							serviceNav?.isActive ? "current-menu-ancestor" : ""
+							NavigasiTentang?.isActive ? "current-menu-ancestor" : ""
 						}`}
 					>
-						<Link href={serviceNav?.path ? serviceNav?.path : "#"}>
-							{serviceNav?.name}
+						<Link href={NavigasiTentang?.path ? NavigasiTentang?.path : ""}>
+							{NavigasiTentang?.name}
+						</Link>
+						<ul className="sub-menu">
+							{NavigasiTentang?.submenu?.length
+								? NavigasiTentang?.submenu?.map((item, idx) => (
+										<li
+											key={idx}
+											className={item?.isActive ? "current-menu-item" : ""}
+										>
+											<Link href={item?.path ? item?.path : ""}>
+												{item?.name ? item?.name : "Tentang Kami"}
+											</Link>
+										</li>
+								  ))
+								: ""}
+						</ul>
+					</li>
+					<li
+						className={`has-dropdown ${
+							NavigasiLayanan?.isActive ? "current-menu-ancestor" : ""
+						}`}
+					>
+						<Link href={NavigasiLayanan?.path ? NavigasiLayanan?.path : ""}>
+							{NavigasiLayanan?.name}
 						</Link>
 						<ul className="sub-menu  mega-menu-service">
-							{serviceNav?.submenu?.length
-								? serviceNav?.submenu?.map((item, idx) => (
+							{NavigasiLayanan?.submenu?.length
+								? NavigasiLayanan?.submenu?.map((item, idx) => (
 										<li key={idx}>
 											<Link
 												className="mega-menu-service-single"
@@ -62,14 +84,14 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 								: ""}
 						</ul>
 					</li>
-					<li className={blogNav?.isActive ? "current-menu-ancestor" : ""}>
-						<Link href="/">
-							{blogNav?.name ? blogNav?.name : "Artikel"}
+					<li className={NavigasiArtikel?.isActive ? "current-menu-ancestor" : ""}>
+						<Link href={NavigasiArtikel?.path ? NavigasiArtikel?.path : ""}>
+							{NavigasiArtikel?.name ? NavigasiArtikel?.name : "Artikel"}
 						</Link>
 					</li>
-					<li className={contactNav?.isActive ? "current-menu-ancestor" : ""}>
-						<Link href={contactNav?.path ? contactNav?.path : "#"}>
-							{contactNav?.name ? contactNav?.name : "Kontak"}
+					<li className={NavigasiKontak?.isActive ? "current-menu-ancestor" : ""}>
+						<Link href={NavigasiKontak?.path ? NavigasiKontak?.path : ""}>
+							{NavigasiKontak?.name ? NavigasiKontak?.name : "Kontak"}
 						</Link>
 					</li>
 				</ul>

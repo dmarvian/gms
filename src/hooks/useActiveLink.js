@@ -3,8 +3,8 @@ import { usePathname } from "next/navigation";
 // make forcely inactive for some paths
 const makeForcelyInactive = (pathname, currentPathname) => {
 	const isInactive = [
-		"/services",
-		"/services/1",
+		"/layanan",
+		"/layanan/1",
 		"/portfolios",
 		"/portfolios/1",
 		"/blogs",

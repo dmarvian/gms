@@ -34,7 +34,7 @@ const Services3 = () => {
 							className="service-btn-area text-center wow fadeInUp"
 							data-wow-delay=".3s"
 						>
-							<ButtonPrimary text={"More Services"} url={"/services"} />
+							<ButtonPrimary text={"More Services"} url={"/layanan"} />
 						</div>
 					</div>
 				</div>

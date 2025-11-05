@@ -14,7 +14,7 @@ const ServiceDetailsMain = ({ currentItemId }) => {
 			<HeroInner
 				title={title ? title : "Service Details"}
 				text={title ? title : "Service Details"}
-				breadcrums={[{ name: "Layanan", path: "/services" }]}
+				breadcrums={[{ name: "Layanan", path: "/layanan" }]}
 			/>
 			<ServicesDetailsPrimary
 				option={{

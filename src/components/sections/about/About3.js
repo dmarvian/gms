@@ -52,16 +52,15 @@ const About3 = ({ type }) => {
 						<div className="about-content-area">
 							<div className={`sec-heading ${type === 2 ? "" : "style-3"}`}>
 								<span className="sub-title wow fadeInUp" data-wow-delay=".3s">
-									<i className="tji-box"></i>Get to Know Us
+									<i className="tji-box"></i>Cari Tahu Tentang Kami
 								</span>
 								<h2 className="sec-title title-anim">
 									{type === 2 ? (
 										<>
-											Driving Innovation and Excellence for Sustainable
-											Corporate Success <span>Worldwide.</span>
+											Pada akhirnya faktor SDM sebagai <span>“the man behind the gun”</span> menjadi penentu dalam memenangkan persaingan.
 										</>
 									) : (
-										"Driving Innovation and Excellence for Sustainable Corporate Success Worldwide."
+										"Pada akhirnya faktor SDM sebagai “the man behind the gun” menjadi penentu dalam memenangkan persaingan."
 									)}
 								</h2>
 							</div>
@@ -71,20 +70,19 @@ const About3 = ({ type }) => {
 								className="mission-vision-box wow fadeInLeft"
 								data-wow-delay=".5s"
 							>
-								<h4 className="title">Our Mission</h4>
+								<h4 className="title">Visi</h4>
 								<p className="desc">
-									our mission is empower businesses through innovate best
-									solution, exceptional service.
+									Meringankan tugas perusahaan mitra dengan mengambil sebagian tanggung jawab dan risiko dalam pengelolaan SDM.
 								</p>
 								<ul className="list-items">
 									<li>
-										<i className="tji-list"></i>Innovation & Excellence
+										<i className="tji-user"></i>Fokus pada kualitas SDM dan budaya kerja.
 									</li>
 									<li>
-										<i className="tji-list"></i>Exceptional Customer
+										<i className="tji-growth"></i>Mendorong efisiensi dan produktivitas.
 									</li>
 									<li>
-										<i className="tji-list"></i>Business Growth
+										<i className="tji-chat"></i>Kemitraan yang transparan dan berkelanjutan.
 									</li>
 								</ul>
 							</div>
@@ -92,10 +90,9 @@ const About3 = ({ type }) => {
 								className="mission-vision-box wow fadeInRight"
 								data-wow-delay=".5s"
 							>
-								<h4 className="title">Our Vision</h4>
+								<h4 className="title">Misi</h4>
 								<p className="desc">
-									Our vision is to become a global leader in providing
-									transformative business solutions.
+									Membentuk SDM berkualitas demi meningkatkan efisiensi dan produktivitas.
 								</p>
 								<ul className="list-items">
 									<li>

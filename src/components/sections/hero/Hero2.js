@@ -129,7 +129,7 @@ const Hero2 = () => {
 					className="circle-text"
 					style={{ backgroundImage: "url('/images/hero/circle-text.webp')" }}
 				></span>
-				<Link className="circle-icon" href="/services">
+				<Link className="circle-icon" href="/layanan">
 					<i className="tji-arrow-down-big"></i>
 				</Link>
 			</div>

@@ -22,7 +22,7 @@ const Layanan = () => {
 								</h2>
 							</div>
 							<div className="wow fadeInUp" data-wow-delay=".6s">
-								<ButtonPrimary text={"Selengkapnya"} url={"/services"} />
+								<ButtonPrimary text={"Selengkapnya"} url={"/layanan"} />
 							</div>
 						</div>
 					</div>
