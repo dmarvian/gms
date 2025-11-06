@@ -9051,14 +9051,22 @@ START: Client CSS
             padding-inline-end: 20px;
   }
 }
-
+.client-name {
+  margin-top: 25px;
+    margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 0;
+}
 .client-logo {
   width: 284px;
-  height: 120px;
+  height: auto;
+  padding: 15px 10px; /* supaya ada ruang atas & bawah */
   background-color: var(--tj-color-common-white);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  flex-direction: column; /* ⬅️ BIKIN GAMBAR & TEKS TURUN */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

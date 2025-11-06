@@ -9,7 +9,7 @@ const BlogCard1 = ({ blog, idx }) => {
 	return (
 		<div className="blog-item wow fadeInUp" data-wow-delay={`0.${idx + 1}s`}>
 			<div className="blog-thumb">
-				<Link href={`/blogs/${id}`}>
+				<Link href={`/artikel/${id}`}>
 					{" "}
 					<Image
 						src={img ? img : "/images/blog/blog-1.webp"}
@@ -26,21 +26,21 @@ const BlogCard1 = ({ blog, idx }) => {
 			<div className="blog-content">
 				<div className="blog-meta">
 					<span className="categories">
-						<Link href={`/blogs?category=${makePath(category)}`}>
+						<Link href={`/artikel?category=${makePath(category)}`}>
 							{" "}
 							{category}
 						</Link>
 					</span>
 					<span>
-						By <Link href={`/blogs/${id}`}>GMS Team</Link>
+						By <Link href={`/artikel/${id}`}>GMS Team</Link>
 					</span>
 				</div>
 				<h4 className="title">
-					<Link href={`/blogs/${id}`}>{title}.</Link>
+					<Link href={`/artikel/${id}`}>{title}.</Link>
 				</h4>
 				<ButtonPrimary
-					text={"Read More"}
-					url={`/blogs/${id}`}
+					text={"Lihat Detail"}
+					url={`/artikel/${id}`}
 					isTextBtn={true}
 				/>
 			</div>

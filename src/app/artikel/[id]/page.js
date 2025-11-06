@@ -1,4 +1,4 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer from "@/components/layout/footer/gms-footer";
 import Header from "@/components/layout/header/Header";
 import BlogDetailsMain from "@/components/layout/main/BlogDetailsMain";
 import Cta from "@/components/sections/cta/Cta";
@@ -25,7 +25,6 @@ export default async function BlogDetails({ params }) {
 					<main>
 						<HeaderSpace />
 						<BlogDetailsMain currentItemId={parseInt(id)} />
-						<Cta />
 					</main>
 					<Footer />
 				</div>

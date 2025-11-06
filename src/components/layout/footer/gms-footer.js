@@ -64,17 +64,17 @@ const Footer2 = () => {
 								<h5 className="title">Informasi</h5>
 								<ul>
 									<li>
-										<Link href="/">Kontak</Link>
+										<Link href="/kontak">Kontak</Link>
 									</li>
 									<li>
-										<Link href="/">Lowongan Pekerjaan</Link>
+										<Link href="/">Loker<span className="badge">COMING SOON</span></Link>
 									</li>
 									<li>
-										<Link href="/">Team Member</Link>
+										<Link href="/artikel">Artikel</Link>
 									</li>
 
 									<li>
-										<Link href="/">Artikel <span className="badge">New</span></Link>
+										<Link href="/">Tentang Kami</Link>
 									</li>
 								</ul>
 							</div>

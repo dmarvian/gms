@@ -1,50 +1,132 @@
 [
 	{
 		"img": "/images/mitra/1.webp",
-		"img2": "/images/mitra/1.webp"
+		"img2": "/images/mitra/1.webp",
+		"name": "PT Internusa Food"
 	},
 	{
 		"img": "/images/mitra/2.webp",
-		"img2": "/images/mitra/2.webp"
+		"img2": "/images/mitra/2.webp",
+		"name": "PT Batman Kencana"
 	},
 	{
 		"img": "/images/mitra/3.webp",
-		"img2": "/images/mitra/3.webp"
+		"img2": "/images/mitra/3.webp",
+		"name": "PT Agung Citra Transformasi"
 	},
 	{
 		"img": "/images/mitra/4.webp",
-		"img2": "/images/mitra/4.webp"
+		"img2": "/images/mitra/4.webp",
+		"name": "PT Jakarta Tunggal Citra"
 	},
 	{
 		"img": "/images/mitra/5.webp",
-		"img2": "/images/mitra/5.webp"
+		"img2": "/images/mitra/5.webp",
+		"name": "PT Satria Utama Nusantara"
 	},
 	{
 		"img": "/images/mitra/6.webp",
-		"img2": "/images/mitra/6.webp"
+		"img2": "/images/mitra/6.webp",
+		"name":"PT Astron Optindo Industries"
 	},
 	{
-		"img": "/images/mitra/1.webp",
-		"img2": "/images/mitra/1.webp"
+		"img": "/images/mitra/7.webp",
+		"img2": "/images/mitra/7.webp",
+		"name": "PT Unitama Sari Mas"
 	},
 	{
-		"img": "/images/mitra/2.webp",
-		"img2": "/images/mitra/2.webp"
+		"img": "/images/mitra/8.webp",
+		"img2": "/images/mitra/8.webp",
+		"name": "PT Budi Texindo Prakarsa"
 	},
 	{
-		"img": "/images/mitra/3.webp",
-		"img2": "/images/mitra/3.webp"
+		"img": "/images/mitra/9.webp",
+		"img2": "/images/mitra/9.webp",
+		"name":"PT Katiga Ritel Strengindo"
 	},
 	{
-		"img": "/images/mitra/4.webp",
-		"img2": "/images/mitra/4.webp"
+		"img": "/images/mitra/10.webp",
+		"img2": "/images/mitra/10.webp",
+		"name": "PT Inti Kemas Makmur Perkasa"
 	},
 	{
-		"img": "/images/mitra/5.webp",
-		"img2": "/images/mitra/5.webp"
+		"img": "/images/mitra/11.webp",
+		"img2": "/images/mitra/11.webp",
+		"name": "PT Cahaya Buana Intitama"
 	},
 	{
-		"img": "/images/mitra/6.webp",
-		"img2": "/images/mitra/6.webp"
+		"img": "/images/mitra/12.webp",
+		"img2": "/images/mitra/12.webp",
+		"name": "PT Superex Raya"
+	},
+	{
+		"img": "/images/mitra/13.webp",
+		"img2": "/images/mitra/13.webp",
+		"name": "PT Jatim Petroleum Transport"
+	},
+	{
+		"img": "/images/mitra/14.webp",
+		"img2": "/images/mitra/14.webp",
+		"name": "PT Golden Mom Indonesia"
+	},
+	{
+		"img": "/images/mitra/15.webp",
+		"img2": "/images/mitra/15.webp",
+		"name": "PT Multi Terminal Indonesia"
+	},
+	{
+		"img": "/images/mitra/16.webp",
+		"img2": "/images/mitra/16.webp",
+		"name": "PT Let's Project"
+	},
+	{
+		"img": "/images/mitra/17.webp",
+		"img2": "/images/mitra/17.webp",
+		"name": "PT Surya Mandiri Tektil Buana"
+	},
+	{
+		"img": "/images/mitra/18.webp",
+		"img2": "/images/mitra/18.webp",
+		"name": "PT Mami Satu Berkarya"
+	},
+	{
+		"img": "/images/mitra/19.webp",
+		"img2": "/images/mitra/19.webp",
+		"name": "PT Bromo Transindo"
+	},
+	{
+		"img": "/images/mitra/20.webp",
+		"img2": "/images/mitra/20.webp",
+		"name": "PT Gajah Putih Elastic"
+	},
+	{
+		"img": "/images/mitra/21.webp",
+		"img2": "/images/mitra/21.webp",
+		"name": "PT Indojaya Swasti Sejati"
+	},
+	{
+		"img": "/images/mitra/22.webp",
+		"img2": "/images/mitra/22.webp",
+		"name": "PT Camiloplas Jaya Makmur"
+	},
+	{
+		"img": "/images/mitra/23.webp",
+		"img2": "/images/mitra/23.webp",
+		"name": "PT Solid Multi Choco Prima"
+	},
+	{
+		"img": "/images/mitra/24.webp",
+		"img2": "/images/mitra/24.webp",
+		"name": "PT Trisakti Gemilang Abadi"
+	},
+	{
+		"img": "/images/mitra/25.webp",
+		"img2": "/images/mitra/25.webp",
+		"name": "PT Wan Jaya Sukses Makmur"
+	},
+	{
+		"img": "/images/mitra/26.webp",
+		"img2": "/images/mitra/26.webp",
+		"name": "PT SCG Barito Logistics"
 	}
 ]

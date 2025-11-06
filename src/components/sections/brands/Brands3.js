@@ -1,4 +1,4 @@
-import BrandSlider2 from "@/components/shared/mitra/BrandSlider2";
+import BrandSlider2 from "@/components/shared/mitra/MitraSlider2";
 
 const Brands3 = () => {
 	return (

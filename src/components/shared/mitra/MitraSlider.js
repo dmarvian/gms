@@ -4,8 +4,8 @@ import getMitra from "@/libs/getMitra";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const BrandSlider1 = ({ className }) => {
-	const brands = getMitra();
+const MitraSlider = ({ className }) => {
+	const mitra = getMitra();
 	return (
 		<Swiper
 			slidesPerView="auto"
@@ -22,15 +22,17 @@ const BrandSlider1 = ({ className }) => {
 			className={`client-slider ${className ? className : "client-slider-1"}`}
 			modules={[Autoplay]}
 		>
-			{brands?.length
-				? brands?.map(({ img }, idx) => (
+			{mitra?.length
+				? mitra?.map(({ img, name }, idx) => (
 						<SwiperSlide key={idx} className="client-item">
 							<div className="client-logo">
 								<img
-									src={img ? img : "/images/brands/brand-1.webp"}
-									alt="Brand"
+									src={img ? img : "/images/mitra/1.webp"}
+									alt="Mitra"
 								/>
+								<p className="client-name">{name ? name : "Mitra"}</p>
 							</div>
+							
 						</SwiperSlide>
 				  ))
 				: ""}
@@ -38,4 +40,4 @@ const BrandSlider1 = ({ className }) => {
 	);
 };
 
-export default BrandSlider1;
+export default MitraSlider;

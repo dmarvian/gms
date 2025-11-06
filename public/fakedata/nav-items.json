@@ -61,11 +61,16 @@
 	},
 	{
 		"id": 4,
-		"name": "Artikel",
+		"name": "Loker",
 		"path": ""
 	},
-	{
+		{
 		"id": 5,
+		"name": "Artikel",
+		"path": "/artikel"
+	},
+	{
+		"id": 6,
 		"name": "Kontak",
 		"path": "/kontak"
 	}

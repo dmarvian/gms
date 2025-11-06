@@ -11,12 +11,12 @@ const BlogCategoriesWidget = () => {
 	const blogs = getBlogs();
 	return (
 		<div className="tj-sidebar-widget widget-categories">
-			<h4 className="widget-title">Categories</h4>
+			<h4 className="widget-title">Kategori</h4>
 			<ul>
 				{categories?.length
 					? categories?.map((category, idx) => (
 							<li key={idx}>
-								<Link href={`/blogs?category=${makePath(category)}`}>
+								<Link href={`/artikel?category=${makePath(category)}`}>
 									{category}{" "}
 									<span className="number">
 										(

@@ -7,14 +7,14 @@ const BlogSidebar = ({ type }) => {
 		<aside className={`tj-main-sidebar ${type == 2 ? "p-0" : ""}`}>
 			{/* <!-- search --> */}
 			<div className="tj-sidebar-widget widget-search">
-				<h4 className="widget-title">Search here</h4>
+				<h4 className="widget-title">Cari Artikel</h4>
 				<div className="search-box">
 					<form action="#">
 						<input
 							type="search"
 							name="search"
 							id="searchTwo"
-							placeholder="Search here"
+							placeholder="Ketik untuk mencari"
 						/>
 						<button type="submit" value="search">
 							<i className="tji-search"></i>

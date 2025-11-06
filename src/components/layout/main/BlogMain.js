@@ -48,7 +48,7 @@ const BlogMain = () => {
 						? author_role
 						: search
 						? makeText(search, true)
-						: "Read Blog"
+						: "Artikel"
 				}
 				text={
 					category
@@ -59,11 +59,11 @@ const BlogMain = () => {
 						? `${author_role}`
 						: search
 						? `${makeText(search, true)}`
-						: "Blogs"
+						: "Artikel"
 				}
 				breadcrums={
 					category || tag || author_role || search
-						? [{ name: "Blogs", path: "/blogs" }]
+						? [{ name: "Artikel", path: "/artikel" }]
 						: []
 				}
 			/>

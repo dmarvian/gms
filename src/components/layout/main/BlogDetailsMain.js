@@ -10,9 +10,9 @@ const BlogDetailsMain = ({ currentItemId }) => {
 	return (
 		<div>
 			<HeroInner
-				title={"Blog Details"}
+				title={title}
 				text={title ? title : "Blog Details"}
-				breadcrums={[{ name: "Blogs", path: "/blogs" }]}
+				breadcrums={[{ name: "Artikel", path: "/artikel" }]}
 			/>
 			<BlogDetailsPrimary option={option} />
 		</div>

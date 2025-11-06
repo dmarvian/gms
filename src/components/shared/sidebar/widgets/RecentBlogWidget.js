@@ -10,7 +10,7 @@ const RecentBlogWidget = () => {
 
 	return (
 		<div className="tj-sidebar-widget tj-recent-posts">
-			<h4 className="widget-title">Related post</h4>
+			<h4 className="widget-title">Artikel Terkait</h4>
 			<ul>
 				{recentBlogs?.length
 					? recentBlogs?.map(
@@ -27,7 +27,7 @@ const RecentBlogWidget = () => {
 							) => (
 								<li key={idx}>
 									<div className="post-thumb">
-										<Link href={`/blogs/${id}`}>
+										<Link href={`/artikel/${id}`}>
 											{" "}
 											<Image
 												src={smallImg}
@@ -39,7 +39,7 @@ const RecentBlogWidget = () => {
 									</div>
 									<div className="post-content">
 										<h6 className="post-title">
-											<Link href={`/blogs/${id}`}>
+											<Link href={`/artikel/${id}`}>
 												{sliceText(title, 32, true)}
 											</Link>
 										</h6>

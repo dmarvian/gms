@@ -128,7 +128,7 @@ const Header = ({
 									)}
 
 									<div className="header-button">
-										<ButtonPrimary text={"Hubungi Kami"} url={"/contact"} />
+										<ButtonPrimary text={"Hubungi Kami"} url={"/kontak"} />
 									</div>
 									{headerType !== 3 && (
 										<div

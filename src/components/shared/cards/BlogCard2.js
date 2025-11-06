@@ -8,7 +8,7 @@ const BlogCard2 = ({ blog, idx }) => {
 	return (
 		<div className="blog-item style-2">
 			<div className="blog-thumb">
-				<Link href={`/blogs/${id}`}>
+				<Link href={`/artikel/${id}`}>
 					<img src={img1 ? img1 : "/images/blog/blog-4.webp"} alt="" />
 				</Link>
 				<div className="blog-date">
@@ -20,21 +20,21 @@ const BlogCard2 = ({ blog, idx }) => {
 				<div className="title-area">
 					<div className="blog-meta">
 						<span className="categories">
-							<Link href={`/blogs?category=${makePath(category)}`}>
+							<Link href={`/artikel?category=${makePath(category)}`}>
 								{category}
 							</Link>
 						</span>
 						<span>
-							By <Link href={`/blogs/${id}`}>Ellinien Loma</Link>
+							By <Link href={`/artikel/${id}`}>GMS Team</Link>
 						</span>
 					</div>
 					<h4 className="title">
-						<Link href={`/blogs/${id}`}>{title}.</Link>
+						<Link href={`/artikel/${id}`}>{title}.</Link>
 					</h4>
 				</div>
 				<ButtonPrimary
 					text={"Read More"}
-					url={`/blogs/${id}`}
+					url={`/artikel/${id}`}
 					isTextBtn={true}
 				/>
 			</div>

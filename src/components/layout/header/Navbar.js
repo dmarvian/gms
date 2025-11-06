@@ -10,8 +10,9 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 	const NavigasiBeranda = makeActiveLink(navItems[0]);
 	const NavigasiTentang = makeActiveLink(navItems[1]);
 	const NavigasiLayanan = makeActiveLink(navItems[2]);
-	const NavigasiArtikel = makeActiveLink(navItems[3]);
-	const NavigasiKontak = makeActiveLink(navItems[4]);
+	const NavigasiLoker = makeActiveLink(navItems[3]);
+	const NavigasiArtikel = makeActiveLink(navItems[4]);
+	const NavigasiKontak = makeActiveLink(navItems[5]);
 
 	return (
 		<div className="menu-area d-none d-lg-inline-flex align-items-center">
@@ -87,6 +88,11 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 					<li className={NavigasiArtikel?.isActive ? "current-menu-ancestor" : ""}>
 						<Link href={NavigasiArtikel?.path ? NavigasiArtikel?.path : ""}>
 							{NavigasiArtikel?.name ? NavigasiArtikel?.name : "Artikel"}
+						</Link>
+					</li>
+					<li className={NavigasiLoker?.isActive ? "current-menu-ancestor" : ""}>
+						<Link href={NavigasiLoker?.path ? NavigasiLoker?.path : ""}>
+							{NavigasiLoker?.name ? NavigasiLoker?.name : "Loker"}
 						</Link>
 					</li>
 					<li className={NavigasiKontak?.isActive ? "current-menu-ancestor" : ""}>
