@@ -1,8 +1,7 @@
 import Footer from "@/components/layout/footer/Footer";
 import Header from "@/components/layout/header/Header";
-import CareerDetails1 from "@/components/sections/careers/CareerDetails1";
-import Cta from "@/components/sections/cta/Cta";
-import HeroInner from "@/components/sections/hero/HeroInner";
+import CareerDetails1 from "@/components/sections/loker/CareerDetails1";
+import HeroNavigasi from "@/components/sections/hero/HeroNavigasi";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
@@ -26,9 +25,8 @@ export default async function CareerDetails({ params }) {
 				<div id="smooth-content">
 					<main>
 						<HeaderSpace />
-						<HeroInner title={"Careers Details"} text={"Careers Details"} />
+						<HeroNavigasi title={"Careers Details"} text={"Careers Details"} />
 						<CareerDetails1 currentItemId={parseInt(id)} />
-						<Cta />
 					</main>
 					<Footer />
 				</div>

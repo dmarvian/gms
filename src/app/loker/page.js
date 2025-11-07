@@ -1,8 +1,7 @@
 import Footer from "@/components/layout/footer/Footer";
 import Header from "@/components/layout/header/Header";
-import Careers1 from "@/components/sections/careers/Careers1";
-import Cta from "@/components/sections/cta/Cta";
-import HeroInner from "@/components/sections/hero/HeroInner";
+import Careers1 from "@/components/sections/loker/Careers1";
+import HeroNavigasi from "@/components/sections/hero/HeroNavigasi";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
@@ -17,9 +16,8 @@ export default function Careers() {
 				<div id="smooth-content">
 					<main>
 						<HeaderSpace />
-						<HeroInner title={"Careers"} text={"Careers"} />
+						<HeroNavigasi title={"Careers"} text={"Careers"} />
 						<Careers1 />
-						<Cta />
 					</main>
 					<Footer />
 				</div>

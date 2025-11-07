@@ -1,4 +1,4 @@
-import HeroInner from "@/components/sections/hero/HeroInner";
+import HeroNavigasi from "@/components/sections/hero/HeroNavigasi";
 import PortfolioDetailsPrimary from "@/components/sections/portfolios/PortfolioDetailsPrimary";
 import getPortfolio from "@/libs/getPortfolio";
 import getPreviousNextItem from "@/libs/getPreviousNextItem";
@@ -10,7 +10,7 @@ const PortfolioDetailsMain = ({ currentItemId }) => {
 	const { title } = option?.currentItem || {};
 	return (
 		<div>
-			<HeroInner
+			<HeroNavigasi
 				title={title ? title : "Portfolio details"}
 				text={title ? title : "Portfolio details"}
 				breadcrums={[{ name: "Portfolio", path: "/portfolios" }]}

@@ -74,7 +74,7 @@ const Footer2 = () => {
 									</li>
 
 									<li>
-										<Link href="/">Tentang Kami</Link>
+										<Link href="/tentang">Tentang Kami</Link>
 									</li>
 								</ul>
 							</div>

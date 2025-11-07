@@ -33,7 +33,7 @@ const About3 = ({ type }) => {
 						<div className="about-content-area">
 							<div className={`sec-heading ${type === 2 ? "" : "style-3"}`}>
 								<span className="sub-title wow fadeInUp" data-wow-delay=".3s">
-									<i className="tji-box"></i>Cari Tahu Tentang Kami
+									<i className="tji-box"></i>PT Guntur Mandala Sakti
 								</span>
 								<p className="wow fadeInUp" data-wow-delay=".3s">
 									Persaingan dalam dunia usaha semakin kompetitif dan pada akhirnya faktor SDM sebagai <span>“the man behind the gun”</span> menjadi penentu dalam memenangkan persaingan. Untuk itulah kami mengambil peran dalam peningkatan Sumber Daya Manusia (SDM) melalui kerja sama kemitraan. Undang-undang No. 13 Tahun 2003 pasal 66 ayat 3, undang-undang nomor 19 tahun 2012, undang-undang cipta kerja pasal 64 yang memberi ruang kepada perusahaan untuk mengalihkan sebagian tanggung jawab di bidang pengelolaan tenaga kerja kepada perusahaan jasa (PPJP) secara alih daya (outsourcing) dengan syarat dan ketentuan yang telah ditetapkan.

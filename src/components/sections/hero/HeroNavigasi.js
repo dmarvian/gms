@@ -1,7 +1,7 @@
 import sliceText from "@/libs/sliceText";
 import Link from "next/link";
 import React from "react";
-const HeroInner = ({ title, text, breadcrums = [] }) => {
+const HeroNavigasi = ({ title, text, breadcrums = [] }) => {
 	return (
 		<section
 			className="tj-page-header section-gap-x"
@@ -50,4 +50,4 @@ const HeroInner = ({ title, text, breadcrums = [] }) => {
 	);
 };
 
-export default HeroInner;
+export default HeroNavigasi;

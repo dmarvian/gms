@@ -10,7 +10,7 @@ const BlogSingle = ({ blog, idx }) => {
 	const {
 		id,
 		detailsImg,
-		img = "/images/blog/blog-1.webp",
+		img = "/images/artikel/blog-1.webp",
 		title,
 		pembuka,
 		desc,

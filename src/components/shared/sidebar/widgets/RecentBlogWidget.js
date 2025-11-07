@@ -17,7 +17,7 @@ const RecentBlogWidget = () => {
 							(
 								{
 									id,
-									smallImg = "/images/blog/post-1.webp",
+									smallImg = "/images/artikel/post-1.webp",
 									title,
 									blogTopList,
 									comments,

@@ -1,9 +1,8 @@
 "use client";
 import Footer from "@/components/layout/footer/gms-footer";
 import Header from "@/components/layout/header/Header";
-import Cta from "@/components/sections/cta/Cta";
 import ErrorPrimary from "@/components/sections/error/ErrorPrimary";
-import HeroInner from "@/components/sections/hero/HeroInner";
+import HeroNavigasi from "@/components/sections/hero/HeroNavigasi";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";

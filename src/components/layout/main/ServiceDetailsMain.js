@@ -1,5 +1,5 @@
-import HeroInner from "@/components/sections/hero/HeroInner";
-import ServicesDetailsPrimary from "@/components/sections/services/ServicesDetailsPrimary";
+import HeroNavigasi from "@/components/sections/hero/HeroNavigasi";
+import ServicesDetailsPrimary from "@/components/sections/layanan/ServicesDetailsPrimary";
 import getALlServices from "@/libs/getALayanan";
 import getPreviousNextItem from "@/libs/getPreviousNextItem";
 
@@ -11,7 +11,7 @@ const ServiceDetailsMain = ({ currentItemId }) => {
 	const { title } = currentItem || {};
 	return (
 		<div>
-			<HeroInner
+			<HeroNavigasi
 				title={title ? title : "Service Details"}
 				text={title ? title : "Service Details"}
 				breadcrums={[{ name: "Layanan", path: "/layanan" }]}

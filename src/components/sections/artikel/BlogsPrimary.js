@@ -1,4 +1,4 @@
-import BlogSingle from "@/components/shared/blogs/BlogSingle";
+import BlogSingle from "@/components/shared/artikel/BlogSingle";
 import Paginations from "@/components/shared/others/Paginations";
 import BlogSidebar from "@/components/shared/sidebar/BlogSidebar";
 import usePagination from "@/hooks/usePagination";

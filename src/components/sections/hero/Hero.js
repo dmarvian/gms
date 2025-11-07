@@ -1,99 +1,137 @@
+"use client";
+import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useState } from "react";
+import { Autoplay, EffectFade, Navigation, Thumbs } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 const Hero = () => {
+	const [controlledMainSwiper, setControlledMainSwiper] = useState(null);
+	const heroSlides = [
+		{
+			subtitle: "PT Guntur Mandala Sakti",
+			title: (
+				<>
+					Solusi <span>Tenaga Kerja</span> Andal.
+				</>
+			),
+			desc: "PT Guntur Mandala Sakti berkomitmen untuk meningkatkan kinerja lewat SDM professional.",
+			img: "/images/hero/gms-hero-1.webp",
+			thumbImg: "/images/hero/gms-hero-1-th.webp",
+		},
+		{
+			subtitle: "PT Guntur Mandala Sakti",
+			title: (
+				<>
+					Solusi <span>Tenaga Kerja</span> Andal.
+				</>
+			),
+			desc: "PT Guntur Mandala Sakti berkomitmen untuk meningkatkan kinerja lewat SDM professional.",
+			img: "/images/hero/gms-hero-2.webp",
+			thumbImg: "/images/hero/gms-hero-2-th.webp",
+		},
+		{
+			subtitle: "PT Guntur Mandala Sakti",
+			title: (
+				<>
+					Solusi <span>Tenaga Kerja</span> Andal.
+				</>
+			),
+			desc: "PT Guntur Mandala Sakti berkomitmen untuk meningkatkan kinerja lewat SDM professional.",
+			img: "/images/hero/gms-hero-3.webp",
+			thumbImg: "/images/hero/gms-hero-3-th.webp",
+		},
+	];
 	return (
-		<section className="tj-banner-section section-gap-x">
-			<div className="banner-area">
-				<div className="banner-left-box">
-					<div className="banner-content">
-						<span className="sub-title wow fadeInDown" data-wow-delay=".2s">
-							<i className="tji-excellence"></i> Recognized for Excellence
+		<section className="tj-slider-section">
+			<Swiper
+				slidesPerView={1}
+				spaceBetween={0}
+				loop={true}
+				effect="fade"
+				speed={1400}
+				autoplay={{ delay: 5000 }}
+				modules={[Autoplay, Navigation, EffectFade, Thumbs]}
+				thumbs={{ swiper: controlledMainSwiper }}
+				navigation={{ nextEl: ".slider-next", prevEl: ".slider-prev" }}
+				className="hero-slider"
+			>
+				{heroSlides.map(({ img, title, desc }, idx) => (
+					<SwiperSlide key={idx} className="tj-slider-item">
+						<div
+							className="slider-bg-image"
+							style={{
+								backgroundImage: `url('${
+									img ? img : "/images/hero/slider-1.webp"
+								}')`,
+							}}
+						></div>
+						<div className="container">
+							<div className="slider-wrapper">
+								<div className="slider-content">
+									<h1 className="slider-title">{title}</h1>
+									<div className="slider-desc">{desc}</div>
+									<div className="slider-btn">
+										<ButtonPrimary text={"Lihat Layanan Kami"} url={"/layanan"} />
+									</div>
+								</div>
+							</div>
+						</div>
+					</SwiperSlide>
+				))}
+
+				<div
+					className="hero-navigation d-inline-flex wow fadeIn"
+					data-wow-delay="1.5s"
+				>
+					<div className="slider-prev" role="button">
+						<span className="anim-icon">
+							<i className="tji-arrow-left"></i>
+							<i className="tji-arrow-left"></i>
 						</span>
-						<h1 className="banner-title title-anim">
-							Driving Excellence Through Evolution and <span>Trust.</span>
-						</h1>
-						<div className="banner-desc-area wow fadeInUp" data-wow-delay=".7s">
-							<Link className="banner-link" href="/about">
-								<span>
-									<i className="tji-arrow-right-big"></i>
-								</span>
-							</Link>
-							<div className="banner-desc">
-								Represents growth, expansion, and modern business solution
-								present growth, expansion.
-							</div>
-						</div>
 					</div>
-					<div className="banner-shape">
-						<img src="/images/shape/pattern-bg.webp" alt="" />
+					<div className="slider-next" role="button">
+						<span className="anim-icon">
+							<i className="tji-arrow-right"></i>
+							<i className="tji-arrow-right"></i>
+						</span>
 					</div>
 				</div>
-				<div className="banner-right-box">
-					<div className="banner-img">
-						<Image
-							data-speed="0.8"
-							src="/images/hero/hero-img.webp"
-							alt=""
-							width={945}
-							height={793}
-						/>
-					</div>
-					<div className="box-area">
-						<div className="customers-box">
-							<div className="customers">
-								<ul>
-									<li className="wow fadeInLeft" data-wow-delay=".5s">
-										<Image
-											src="/images/testimonial/client-1.webp"
-											alt=""
-											width={89}
-											height={89}
-										/>
-									</li>
-									<li className="wow fadeInLeft" data-wow-delay=".6s">
-										<Image
-											src="/images/testimonial/client-2.webp"
-											alt=""
-											width={89}
-											height={89}
-										/>
-									</li>
-									<li className="wow fadeInLeft" data-wow-delay=".7s">
-										<Image
-											src="/images/testimonial/client-3.webp"
-											alt=""
-											width={89}
-											height={89}
-										/>
-									</li>
-									<li className="wow fadeInLeft" data-wow-delay=".8s">
-										<span>
-											<i className="tji-plus"></i>
-										</span>
-									</li>
-								</ul>
-							</div>
-							<div
-								className="customers-number wow fadeInUp"
-								data-wow-delay=".5s"
-							>
-								30K
-							</div>
-							<h6 className="customers-text wow fadeInUp" data-wow-delay=".5s">
-								Happy customer we have world-wide.
-							</h6>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div className="banner-scroll wow fadeInDown" data-wow-delay="2s">
-				<button data-target="#choose" className="scroll-down tj-scroll-btn">
-					<span>
-						<i className="tji-arrow-down-long"></i>
-					</span>
-					Scroll Down
-				</button>
+			</Swiper>
+			<Swiper
+				onSwiper={setControlledMainSwiper} // capture thumbs swiper
+				slidesPerView={3}
+				spaceBetween={15}
+				loop={false}
+				freeMode={true}
+				watchSlidesProgress={true}
+				modules={[Thumbs]}
+				className="hero-thumb wow fadeIn"
+				data-wow-delay="2s"
+			>
+				{heroSlides.map(
+					({ thumbImg = "/images/hero/slider-thumb-1.webp" }, idx) => (
+						<SwiperSlide key={idx} className="thumb-item">
+							<Image
+								src={thumbImg}
+								alt="images"
+								width={80}
+								height={80}
+								style={{ height: "auto" }}
+							/>
+						</SwiperSlide>
+					)
+				)}
+			</Swiper>
+
+			<div className="circle-text-wrap wow fadeInUp" data-wow-delay="1s">
+				<span
+					className="circle-text"
+					style={{ backgroundImage: "url('/images/hero/circle-text.webp')" }}
+				></span>
+				<Link className="circle-icon" href="/layanan">
+					<i className="tji-arrow-down-big"></i>
+				</Link>
 			</div>
 		</section>
 	);

@@ -1,5 +1,5 @@
-import BlogDetailsPrimary from "@/components/sections/blogs/BlogDetailsPrimary";
-import HeroInner from "@/components/sections/hero/HeroInner";
+import BlogDetailsPrimary from "@/components/sections/artikel/BlogDetailsPrimary";
+import HeroNavigasi from "@/components/sections/hero/HeroNavigasi";
 import getBlogs from "@/libs/getBlogs";
 import getPreviousNextItem from "@/libs/getPreviousNextItem";
 const BlogDetailsMain = ({ currentItemId }) => {
@@ -9,7 +9,7 @@ const BlogDetailsMain = ({ currentItemId }) => {
 	const { title } = option?.currentItem || {};
 	return (
 		<div>
-			<HeroInner
+			<HeroNavigasi
 				title={title}
 				text={title ? title : "Blog Details"}
 				breadcrums={[{ name: "Artikel", path: "/artikel" }]}

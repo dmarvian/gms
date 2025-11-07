@@ -1,6 +1,6 @@
 "use client";
-import BlogsPrimary from "@/components/sections/blogs/BlogsPrimary";
-import HeroInner from "@/components/sections/hero/HeroInner";
+import BlogsPrimary from "@/components/sections/artikel/BlogsPrimary";
+import HeroNavigasi from "@/components/sections/hero/HeroNavigasi";
 import filterItems from "@/libs/filterItems";
 import getBlogs from "@/libs/getBlogs";
 import makeText from "@/libs/makeText";
@@ -38,7 +38,7 @@ const BlogMain = () => {
 
 	return (
 		<div>
-			<HeroInner
+			<HeroNavigasi
 				title={
 					category
 						? `Category: ${makeText(category, true)}`

@@ -12,7 +12,7 @@ const BlogCard1 = ({ blog, idx }) => {
 				<Link href={`/artikel/${id}`}>
 					{" "}
 					<Image
-						src={img ? img : "/images/blog/blog-1.webp"}
+						src={img ? img : "/images/artikel/blog-1.webp"}
 						alt="Images"
 						width={870}
 						height={450}
