@@ -9079,18 +9079,28 @@ START: Client CSS
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .client-logo {
-    width: 220px;
-    height: 90px;
+    width: 250px;
+    height: 70px;
+    padding: 50px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .client-logo {
-    width: 190px;
+    width: 250px;
     height: 70px;
-    padding: 20px;
+    padding: 50px;
   }
 }
-
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .client-name {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .client-name {
+    font-size: 10px;
+  }
+}
 .client-slider-2 .client-logo {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.1);
