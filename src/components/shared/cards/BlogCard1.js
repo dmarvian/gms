@@ -36,7 +36,7 @@ const BlogCard1 = ({ blog, idx }) => {
 					</span>
 				</div>
 				<h4 className="title">
-					<Link href={`/artikel/${id}`}>{title}.</Link>
+					<Link href={`/artikel/${id}`}>{title}</Link>
 				</h4>
 				<ButtonPrimary
 					text={"Lihat Detail"}

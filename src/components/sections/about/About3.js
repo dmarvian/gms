@@ -13,38 +13,19 @@ const About3 = ({ type }) => {
 							<div className="about-img overflow-hidden">
 								<Image
 									data-speed=".8"
-									src="/images/about/about-5.webp"
+									src="/images/tentang/direktur.webp"
 									alt=""
 									width={591}
 									height={639}
 								/>
 							</div>
 							<div className={`box-area ${type === 2 ? "style-2" : ""}`}>
-								<div className="progress-box wow fadeInUp" data-wow-delay=".3s">
-									<h4 className="title">Business Progress</h4>
-									<ul className="tj-progress-list">
-										<li>
-											<h6 className="tj-progress-title">Revenue</h6>
-											<div className="tj-progress">
-												<span className="tj-progress-percent">82%</span>
-												<div
-													className="tj-progress-bar"
-													data-percent="82"
-												></div>
-											</div>
-										</li>
-										<li>
-											<h6 className="tj-progress-title">Satisfaction</h6>
-											<div className="tj-progress">
-												<span className="tj-progress-percent">90%</span>
-												<div
-													className="tj-progress-bar"
-													data-percent="90"
-												></div>
-											</div>
-										</li>
-									</ul>
-								</div>
+								<blockquote className="wow fadeInUp" data-wow-delay=".3s">
+									<p>
+										Kami berkomitmen pada kualitas, integritas, dan kepuasan pelanggan dalam setiap aspek operasional.
+									</p>
+									<cite>Apriyanti, Direktur</cite>
+								</blockquote>
 							</div>
 						</div>
 					</div>
@@ -54,15 +35,12 @@ const About3 = ({ type }) => {
 								<span className="sub-title wow fadeInUp" data-wow-delay=".3s">
 									<i className="tji-box"></i>Cari Tahu Tentang Kami
 								</span>
-								<h2 className="sec-title title-anim">
-									{type === 2 ? (
-										<>
-											Pada akhirnya faktor SDM sebagai <span>“the man behind the gun”</span> menjadi penentu dalam memenangkan persaingan.
-										</>
-									) : (
-										"Pada akhirnya faktor SDM sebagai “the man behind the gun” menjadi penentu dalam memenangkan persaingan."
-									)}
-								</h2>
+								<p className="wow fadeInUp" data-wow-delay=".3s">
+									Persaingan dalam dunia usaha semakin kompetitif dan pada akhirnya faktor SDM sebagai <span>“the man behind the gun”</span> menjadi penentu dalam memenangkan persaingan. Untuk itulah kami mengambil peran dalam peningkatan Sumber Daya Manusia (SDM) melalui kerja sama kemitraan. Undang-undang No. 13 Tahun 2003 pasal 66 ayat 3, undang-undang nomor 19 tahun 2012, undang-undang cipta kerja pasal 64 yang memberi ruang kepada perusahaan untuk mengalihkan sebagian tanggung jawab di bidang pengelolaan tenaga kerja kepada perusahaan jasa (PPJP) secara alih daya (outsourcing) dengan syarat dan ketentuan yang telah ditetapkan.
+								</p>
+								<p className="wow fadeInUp" data-wow-delay=".3s">
+									PT Guntur Mandala Sakti sebagai perusahaan PPJP telah menjalin kerja sama kemitraan di bidang ketenagakerjaan dengan beberapa perusahaan untuk layanan Outsourcing Management Service dan Recruitment Service. Kami juga dapat memberikan jasa konsultasi terkait hubungan industrial.
+								</p>
 							</div>
 						</div>
 						<div className="about-bottom-area">
@@ -76,13 +54,13 @@ const About3 = ({ type }) => {
 								</p>
 								<ul className="list-items">
 									<li>
-										<i className="tji-user"></i>Fokus pada kualitas SDM dan budaya kerja.
+										<i className="tji-user"></i>Fokus pada Kualitas SDM
 									</li>
 									<li>
-										<i className="tji-growth"></i>Mendorong efisiensi dan produktivitas.
+										<i className="tji-operations"></i>Mendorong Efisiensi
 									</li>
 									<li>
-										<i className="tji-chat"></i>Kemitraan yang transparan dan berkelanjutan.
+										<i className="tji-chat"></i>Kemitraan yang Transparan
 									</li>
 								</ul>
 							</div>
@@ -92,23 +70,29 @@ const About3 = ({ type }) => {
 							>
 								<h4 className="title">Misi</h4>
 								<p className="desc">
-									Membentuk SDM berkualitas demi meningkatkan efisiensi dan produktivitas.
+									Kami percaya bahwa keberhasilan berawal dari manusia. Misi kami:
 								</p>
 								<ul className="list-items">
 									<li>
-										<i className="tji-list"></i>Global Leadership
+										<i className="tji-team"></i>Rekrutmen Profesional
 									</li>
 									<li>
-										<i className="tji-list"></i>Transformative Impact
+										<i className="tji-growth"></i>Pengembangan SDM
 									</li>
 									<li>
-										<i className="tji-list"></i>Sustainable Success
+										<i className="tji-organize"></i>Pemenuhan Tenaga Kerja
+									</li>
+									<li>
+										<i className="tji-chart"></i>Evaluasi Kinerja
+									</li>
+									<li>
+										<i className="tji-excellence"></i>Kontrol Mutu Layanan
 									</li>
 								</ul>
 							</div>
 						</div>
 						<div className="about-btn-area wow fadeInUp" data-wow-delay=".5s">
-							<ButtonPrimary text={"Learn More About Us"} url={"/about"} />
+							<ButtonPrimary text={"Unduh Company Profile Kami"} url={"https://gunturmandalasakti.com/gms-company-profile.pdf"} />
 						</div>
 					</div>
 				</div>

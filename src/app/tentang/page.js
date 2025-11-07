@@ -1,8 +1,7 @@
-import Footer from "@/components/layout/footer/Footer";
+import Footer from "@/components/layout/footer/gms-footer";
 import Header from "@/components/layout/header/Header";
-import About3 from "@/components/sections/about/About3";
+import TentangGMS from "@/components/sections/about/About3";
 import Brands1 from "@/components/sections/brands/Brands1";
-import Cta from "@/components/sections/cta/Cta";
 import Faq2 from "@/components/sections/faq/Faq2";
 import Features from "@/components/sections/features/Features";
 import HeroInner from "@/components/sections/hero/HeroInner";
@@ -23,12 +22,8 @@ export default function About() {
 					<main>
 						<HeaderSpace />
 						<HeroInner title={"Profil GMS"} text={"Profil GMS"} />
-						<About3 type={2} />
+						<TentangGMS type={2} />
 						<Brands1 type={2} />
-						<Testimonials2 type={2} />
-						<Team1 type={3} />
-						<Faq2 type={3} />
-						<Cta />
 					</main>
 					<Footer />
 				</div>

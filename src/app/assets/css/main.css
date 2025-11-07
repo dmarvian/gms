@@ -9115,6 +9115,7 @@ START: About CSS
 ----------------------------------------*/
 .about-img-area {
   position: relative;
+  height: 770px;
   -webkit-margin-end: -8px;
           margin-inline-end: -8px;
 }
