@@ -34,12 +34,23 @@ const MobileNavbar = () => {
 									{NavigasiBeranda?.name ? NavigasiBeranda?.name : "Beranda"}
 								</Link>
 							</li>
-							<li>
-								<Link href={NavigasiTentang?.path ? NavigasiTentang?.path : "/"}>
-									{" "}
-									{NavigasiTentang?.name ? NavigasiTentang?.name : "Beranda"}
-								</Link>
-							</li>
+							<MobileMenuItem
+								text={NavigasiTentang?.name}
+								url={NavigasiTentang?.path ? NavigasiTentang?.path : "#"}
+							>
+								{NavigasiTentang?.submenu?.length
+									? NavigasiTentang?.submenu?.map((item, idx) => (
+											<li
+												key={idx}
+												className={item?.isActive ? "current-menu-item" : ""}
+											>
+												<Link href={item?.path ? item?.path : "/#"}>
+													{item?.name ? item?.name : "Tentang Kami"}
+												</Link>
+											</li>
+									  ))
+									: ""}
+							</MobileMenuItem>
 							<MobileMenuItem
 								text={NavigasiLayanan?.name}
 								url={NavigasiLayanan?.path ? NavigasiLayanan?.path : "#"}

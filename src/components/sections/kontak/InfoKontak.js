@@ -82,12 +82,12 @@ const ContactTop = () => {
 							<h3 className="contact-title">WhatsApp</h3>
 							<ul className="contact-list">
 								<li>
-									<Link href="http://wa.me/6285317555542">
+									<Link href="http://wa.me/6281211996209" target="_blank" rel="noopener noreferrer">
 										+62 853-1755-5542
 									</Link>
 								</li>
 								<li className="active">
-									<Link href="http://wa.me/6285317555542">Butuh bantuan?</Link>
+									<Link href="http://wa.me/6281211996209" target="_blank" rel="noopener noreferrer">Yuda (HRD)</Link>
 								</li>
 							</ul>
 						</div>

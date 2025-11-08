@@ -92,7 +92,7 @@ const About3 = ({ type }) => {
 							</div>
 						</div>
 						<div className="about-btn-area wow fadeInUp" data-wow-delay=".5s">
-							<ButtonPrimary text={"Unduh Company Profile Kami"} url={"https://gunturmandalasakti.com/gms-company-profile.pdf"} />
+							<ButtonPrimary text={"Unduh Company Profile Kami (.PDF)"} url={"https://gunturmandalasakti.com/gms-company-profile.pdf"} target={"_blank"} rel={"noopener noreferrer"}/>
 						</div>
 					</div>
 				</div>

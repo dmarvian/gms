@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const ButtonPrimary = ({ className, text, isTextBtn, url, type, iconName }) => {
+const ButtonPrimary = ({ className, text, isTextBtn, url, target, rel, type, iconName }) => {
 	return (
 		<>
 			{type ? (
@@ -17,10 +17,13 @@ const ButtonPrimary = ({ className, text, isTextBtn, url, type, iconName }) => {
 				</button>
 			) : (
 				<Link
+					
 					href={url ? url : "/"}
 					className={`${isTextBtn ? "text-btn" : "tj-primary-btn"} ${
 						className ? className : ""
 					}`}
+					target={target}
+					rel={rel}
 				>
 					<span className="btn-text">
 						<span>{text}</span>

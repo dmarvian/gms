@@ -32,7 +32,7 @@ const BlogDetailsPrimary = () => {
 									<PopupVideo>
 										<Link
 											className="video-btn video-popup glightbox"
-											href="https://www.youtube.com/watch?v=xUD5XJfIv-s"
+											href="https://www.youtube.com/watch?v=FeX-2IHFFsY"
 										>
 											<span>
 												<i className="tji-play"></i>

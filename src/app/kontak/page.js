@@ -1,7 +1,7 @@
 import Footer from "@/components/layout/footer/gms-footer";
 import Header from "@/components/layout/header/Header";
-import Contact3 from "@/components/sections/kontak/Contact3";
-import ContactTop from "@/components/sections/kontak/ContactTop";
+import Kontak from "@/components/sections/kontak/FormKontak";
+import InfoKontak from "@/components/sections/kontak/InfoKontak";
 import HeroNavigasi from "@/components/sections/hero/HeroNavigasi";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
@@ -17,8 +17,8 @@ export default function Contact() {
 					<main>
 						<HeaderSpace />
 						<HeroNavigasi title={"Kontak"} text={"Kontak"} />
-						<ContactTop />
-						<Contact3 />
+						<InfoKontak />
+						<Kontak />
 					</main>
 					<Footer />
 				</div>
