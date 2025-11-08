@@ -9,8 +9,9 @@ const MobileNavbar = () => {
 	const NavigasiBeranda = navItems[0];
 	const NavigasiTentang = navItems[1];
 	const NavigasiLayanan = navItems[2];
-	const NavigasiArtikel = navItems[3];
-	const NavigasiKontak = navItems[4];
+	const NavigasiLoker = navItems[3];
+	const NavigasiArtikel = navItems[4];
+	const NavigasiKontak = navItems[5];
 	return (
 		<div className="hamburger_menu">
 			<div className="mobile_menu mean-container">
@@ -86,13 +87,19 @@ const MobileNavbar = () => {
 									: ""}
 							</MobileMenuItem>
 							<li>
-								<Link href={NavigasiArtikel?.path ? NavigasiArtikel?.path : "/"}>
+								<Link href={NavigasiArtikel?.path ? NavigasiArtikel?.path : ""}>
 									{" "}
 									{NavigasiArtikel?.name ? NavigasiArtikel?.name : "Artikel"}
 								</Link>
 							</li>
+							<li>
+								<Link href={NavigasiLoker?.path ? NavigasiLoker?.path : ""}>
+									{" "}
+									{NavigasiLoker?.name ? NavigasiLoker?.name : "Loker"}
+								</Link>
+							</li>
 							<li className="mean-last">
-								<Link href={NavigasiKontak?.path ? NavigasiKontak?.path : "/"}>
+								<Link href={NavigasiKontak?.path ? NavigasiKontak?.path : ""}>
 									{" "}
 									{NavigasiKontak?.name ? NavigasiKontak?.name : "Kontak"}
 								</Link>

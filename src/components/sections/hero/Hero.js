@@ -41,6 +41,28 @@ const Hero = () => {
 			img: "/images/hero/gms-hero-3.webp",
 			thumbImg: "/images/hero/gms-hero-3-th.webp",
 		},
+		{
+			subtitle: "PT Guntur Mandala Sakti",
+			title: (
+				<>
+					Solusi <span>Tenaga Kerja</span> Andal.
+				</>
+			),
+			desc: "PT Guntur Mandala Sakti berkomitmen untuk meningkatkan kinerja lewat SDM professional.",
+			img: "/images/hero/gms-hero-4.webp",
+			thumbImg: "/images/hero/gms-hero-4-th.webp",
+		},
+				{
+			subtitle: "PT Guntur Mandala Sakti",
+			title: (
+				<>
+					Solusi <span>Tenaga Kerja</span> Andal.
+				</>
+			),
+			desc: "PT Guntur Mandala Sakti berkomitmen untuk meningkatkan kinerja lewat SDM professional.",
+			img: "/images/hero/gms-hero-5.webp",
+			thumbImg: "/images/hero/gms-hero-5-th.webp",
+		},
 	];
 	return (
 		<section className="tj-slider-section">
