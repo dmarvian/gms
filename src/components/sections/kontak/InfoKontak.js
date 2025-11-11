@@ -83,11 +83,11 @@ const ContactTop = () => {
 							<ul className="contact-list">
 								<li>
 									<Link href="http://wa.me/6281211996209" target="_blank" rel="noopener noreferrer">
-										+62 853-1755-5542
+										+62 812-1199-6209
 									</Link>
 								</li>
 								<li className="active">
-									<Link href="http://wa.me/6281211996209" target="_blank" rel="noopener noreferrer">Yuda (HRD)</Link>
+									<Link href="http://wa.me/6281211996209" target="_blank" rel="noopener noreferrer">Yudha (HRD)</Link>
 								</li>
 							</ul>
 						</div>

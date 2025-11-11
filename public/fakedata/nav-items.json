@@ -7,26 +7,7 @@
 	{
 		"id": 2,
 		"name": "Tentang Kami",
-		"submenu": [
-			{
-				"id": 1,
-				"name": "Profil GMS",
-				"path": "/tentang",
-				"badge": null
-			},
-			{
-				"id": 2,
-				"name": "Legalitas",
-				"path": "",
-				"badge": null
-			},
-			{
-				"id": 3,
-				"name": "Galeri",
-				"path": "",
-				"badge": null
-			}
-		]
+		"path": "/tentang"
 	},
 	{
 		"id": 3,
