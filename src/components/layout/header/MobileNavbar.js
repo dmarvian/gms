@@ -11,7 +11,6 @@ const MobileNavbar = () => {
 	const NavigasiLayanan = navItems[2];
 	const NavigasiLoker = navItems[3];
 	const NavigasiArtikel = navItems[4];
-	const NavigasiKontak = navItems[5];
 	return (
 		<div className="hamburger_menu">
 			<div className="mobile_menu mean-container">
@@ -35,12 +34,23 @@ const MobileNavbar = () => {
 									{NavigasiBeranda?.name ? NavigasiBeranda?.name : "Beranda"}
 								</Link>
 							</li>
-							<li>
-								<Link href={NavigasiTentang?.path ? NavigasiTentang?.path : "/"}>
-									{" "}
-									{NavigasiTentang?.name ? NavigasiTentang?.name : "Beranda"}
-								</Link>
-							</li>
+							<MobileMenuItem
+								text={NavigasiTentang?.name}
+								url={NavigasiTentang?.path ? NavigasiTentang?.path : "#"}
+							>
+								{NavigasiTentang?.submenu?.length
+									? NavigasiTentang?.submenu?.map((item, idx) => (
+											<li
+												key={idx}
+												className={item?.isActive ? "current-menu-item" : ""}
+											>
+												<Link href={item?.path ? item?.path : "/#"}>
+													{item?.name ? item?.name : "Tentang Kami"}
+												</Link>
+											</li>
+									  ))
+									: ""}
+							</MobileMenuItem>
 							<MobileMenuItem
 								text={NavigasiLayanan?.name}
 								url={NavigasiLayanan?.path ? NavigasiLayanan?.path : "#"}
@@ -85,12 +95,6 @@ const MobileNavbar = () => {
 								<Link href={NavigasiLoker?.path ? NavigasiLoker?.path : ""}>
 									{" "}
 									{NavigasiLoker?.name ? NavigasiLoker?.name : "Loker"}
-								</Link>
-							</li>
-							<li className="mean-last">
-								<Link href={NavigasiKontak?.path ? NavigasiKontak?.path : ""}>
-									{" "}
-									{NavigasiKontak?.name ? NavigasiKontak?.name : "Kontak"}
 								</Link>
 							</li>
 						</ul>

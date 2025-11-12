@@ -12,7 +12,6 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 	const NavigasiLayanan = makeActiveLink(navItems[2]);
 	const NavigasiLoker = makeActiveLink(navItems[3]);
 	const NavigasiArtikel = makeActiveLink(navItems[4]);
-	const NavigasiKontak = makeActiveLink(navItems[5]);
 
 	return (
 		<div className="menu-area d-none d-lg-inline-flex align-items-center">
@@ -23,10 +22,28 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 							{NavigasiBeranda?.name ? NavigasiBeranda?.name : "Beranda"}
 						</Link>
 					</li>
-					<li className={NavigasiTentang?.isActive ? "current-menu-ancestor" : ""}>
+					<li
+						className={`has-dropdown ${
+							NavigasiTentang?.isActive ? "current-menu-ancestor" : ""
+						}`}
+					>
 						<Link href={NavigasiTentang?.path ? NavigasiTentang?.path : ""}>
-							{NavigasiTentang?.name ? NavigasiTentang?.name : "Beranda"}
+							{NavigasiTentang?.name}
 						</Link>
+						<ul className="sub-menu">
+							{NavigasiTentang?.submenu?.length
+								? NavigasiTentang?.submenu?.map((item, idx) => (
+										<li
+											key={idx}
+											className={item?.isActive ? "current-menu-item" : ""}
+										>
+											<Link href={item?.path ? item?.path : ""}>
+												{item?.name ? item?.name : "Tentang Kami"}
+											</Link>
+										</li>
+								  ))
+								: ""}
+						</ul>
 					</li>
 					<li
 						className={`has-dropdown ${
@@ -75,11 +92,6 @@ const Navbar = ({ headerType, isStickyHeader }) => {
 					<li className={NavigasiLoker?.isActive ? "current-menu-ancestor" : ""}>
 						<Link href={NavigasiLoker?.path ? NavigasiLoker?.path : ""}>
 							{NavigasiLoker?.name ? NavigasiLoker?.name : "Loker"}
-						</Link>
-					</li>
-					<li className={NavigasiKontak?.isActive ? "current-menu-ancestor" : ""}>
-						<Link href={NavigasiKontak?.path ? NavigasiKontak?.path : ""}>
-							{NavigasiKontak?.name ? NavigasiKontak?.name : "Kontak"}
 						</Link>
 					</li>
 				</ul>

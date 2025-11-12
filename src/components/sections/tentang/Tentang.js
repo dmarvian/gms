@@ -54,13 +54,13 @@ const About3 = ({ type }) => {
 								</p>
 								<ul className="list-items">
 									<li>
-										<i className="tji-user"></i>Fokus pada Kualitas SDM
+										<i className="tji-user"></i>SDM Berkualitas
 									</li>
 									<li>
-										<i className="tji-operations"></i>Mendorong Efisiensi
+										<i className="tji-operations"></i>Efektif dan Efisien 
 									</li>
 									<li>
-										<i className="tji-chat"></i>Kemitraan yang Transparan
+										<i className="tji-chat"></i>Kolaborasi Terbuka
 									</li>
 								</ul>
 							</div>
@@ -80,7 +80,7 @@ const About3 = ({ type }) => {
 										<i className="tji-growth"></i>Pengembangan SDM
 									</li>
 									<li>
-										<i className="tji-organize"></i>Pemenuhan Tenaga Kerja
+										<i className="tji-organize"></i>Penyaluran SDM
 									</li>
 									<li>
 										<i className="tji-chart"></i>Evaluasi Kinerja
