@@ -10,7 +10,7 @@ const BlogSingle = ({ blog, idx }) => {
 	const {
 		id,
 		detailsImg,
-		img = "/images/artikel/blog-1.webp",
+		foto,
 		title,
 		pembuka,
 		desc,
@@ -32,7 +32,7 @@ const BlogSingle = ({ blog, idx }) => {
 		>
 			<div className="blog-thumb">
 				<Link href={`/artikel/${id}`}>
-					<Image src={img} alt="" width={870} height={450} />
+					<Image src={foto} alt="" width={870} height={450} />
 				</Link>
 				<div className="blog-date">
 					<span className="date">{modifyNumber(day)}</span>

@@ -18,15 +18,6 @@ const BlogCategoriesWidget = () => {
 							<li key={idx}>
 								<Link href={`/artikel?category=${makePath(category)}`}>
 									{category}{" "}
-									<span className="number">
-										(
-										{modifyNumber(
-											countDataLength(
-												filterItems(blogs, "category", makePath(category))
-											)
-										)}
-										)
-									</span>
 								</Link>{" "}
 							</li>
 					  ))

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const BlogDetailsPrimary = ({ option }) => {
 	const { prevId, nextId, currentItem, isPrevItem, isNextItem } = option || {};
-	const { penulis, category, title, pembuka, quotes, quotesby, kesimpulan, subjudul1, paragraf1, subjudul2, paragraf2, subjudul3, paragraf3, poin1, poin2, poin3, poin4, poin5, id, img, date, tags } = currentItem || {};
+	const { penulis, category, title, pembuka, quotes, quotesby, kesimpulan, subjudul1, paragraf1, subjudul2, paragraf2, subjudul3, paragraf3, poin1, poin2, poin3, poin4, poin5, poin6, date, tags } = currentItem || {};
 	return (
 		<section className="tj-blog-section section-gap slidebar-stickiy-container">
 			<div className="container">
@@ -102,6 +102,12 @@ const BlogDetailsPrimary = ({ option }) => {
 											<i className="tji-check"></i>
 										</span>
 										{poin5}
+									</li>
+									<li>
+										<span>
+											<i className="tji-check"></i>
+										</span>
+										{poin6}
 									</li>
 								</ul>
 								<h3 className="wow fadeInUp" data-wow-delay=".3s">

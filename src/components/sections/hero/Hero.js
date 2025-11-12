@@ -7,63 +7,64 @@ import { Autoplay, EffectFade, Navigation, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 const Hero = () => {
 	const [controlledMainSwiper, setControlledMainSwiper] = useState(null);
-	const heroSlides = [
-		{
-			subtitle: "PT Guntur Mandala Sakti",
-			title: (
-				<>
-					Solusi <span>Tenaga Kerja</span> Andal.
-				</>
-			),
-			desc: "PT Guntur Mandala Sakti berkomitmen untuk meningkatkan kinerja lewat SDM professional.",
-			img: "/images/hero/gms-hero-1.webp",
-			thumbImg: "/images/hero/gms-hero-1-th.webp",
-		},
-		{
-			subtitle: "PT Guntur Mandala Sakti",
-			title: (
-				<>
-					Solusi <span>Tenaga Kerja</span> Andal.
-				</>
-			),
-			desc: "PT Guntur Mandala Sakti berkomitmen untuk meningkatkan kinerja lewat SDM professional.",
-			img: "/images/hero/gms-hero-2.webp",
-			thumbImg: "/images/hero/gms-hero-2-th.webp",
-		},
-		{
-			subtitle: "PT Guntur Mandala Sakti",
-			title: (
-				<>
-					Solusi <span>Tenaga Kerja</span> Andal.
-				</>
-			),
-			desc: "PT Guntur Mandala Sakti berkomitmen untuk meningkatkan kinerja lewat SDM professional.",
-			img: "/images/hero/gms-hero-3.webp",
-			thumbImg: "/images/hero/gms-hero-3-th.webp",
-		},
-		{
-			subtitle: "PT Guntur Mandala Sakti",
-			title: (
-				<>
-					Solusi <span>Tenaga Kerja</span> Andal.
-				</>
-			),
-			desc: "PT Guntur Mandala Sakti berkomitmen untuk meningkatkan kinerja lewat SDM professional.",
-			img: "/images/hero/gms-hero-4.webp",
-			thumbImg: "/images/hero/gms-hero-4-th.webp",
-		},
-				{
-			subtitle: "PT Guntur Mandala Sakti",
-			title: (
-				<>
-					Solusi <span>Tenaga Kerja</span> Andal.
-				</>
-			),
-			desc: "PT Guntur Mandala Sakti berkomitmen untuk meningkatkan kinerja lewat SDM professional.",
-			img: "/images/hero/gms-hero-5.webp",
-			thumbImg: "/images/hero/gms-hero-5-th.webp",
-		},
-	];
+const heroSlides = [
+	{
+		subtitle: "PT Guntur Mandala Sakti",
+		title: (
+			<>
+				Solusi <span>Tenaga Kerja</span> Andal.
+			</>
+		),
+		desc: "Kami menghadirkan tenaga kerja profesional untuk mendukung kinerja optimal perusahaan.",
+		img: "/images/hero/gms-hero-1.webp",
+		thumbImg: "/images/hero/gms-hero-1-th.webp",
+	},
+	{
+		subtitle: "PT Guntur Mandala Sakti",
+		title: (
+			<>
+				Mitra <span>Outsourcing</span> Terpercaya.
+			</>
+		),
+		desc: "Kami menjadi mitra strategis dalam penyediaan dan pengelolaan SDM yang efisien dan berkualitas.",
+		img: "/images/hero/gms-hero-2.webp",
+		thumbImg: "/images/hero/gms-hero-2-th.webp",
+	},
+	{
+		subtitle: "PT Guntur Mandala Sakti",
+		title: (
+			<>
+				Dukungan <span>Operasional</span> Profesional.
+			</>
+		),
+		desc: "Kami menyediakan tenaga kerja terampil yang siap mendukung kelancaran operasional bisnis Anda.",
+		img: "/images/hero/gms-hero-3.webp",
+		thumbImg: "/images/hero/gms-hero-3-th.webp",
+	},
+	{
+		subtitle: "PT Guntur Mandala Sakti",
+		title: (
+			<>
+				Layanan <span>Kebersihan</span> & <span>Keamanan</span>.
+			</>
+		),
+		desc: "Kami memberikan layanan kebersihan dan keamanan dengan standar profesional.",
+		img: "/images/hero/gms-hero-4.webp",
+		thumbImg: "/images/hero/gms-hero-4-th.webp",
+	},
+	{
+		subtitle: "PT Guntur Mandala Sakti",
+		title: (
+			<>
+				Bersama <span>Tumbuh</span> dan <span>Berkembang</span>.
+			</>
+		),
+		desc: "Kami membangun kemitraan jangka panjang untuk mendukung pertumbuhan bisnis berkelanjutan.",
+		img: "/images/hero/gms-hero-5.webp",
+		thumbImg: "/images/hero/gms-hero-5-th.webp",
+	},
+];
+
 	return (
 		<section className="tj-slider-section">
 			<Swiper

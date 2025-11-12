@@ -5,14 +5,14 @@ import Link from "next/link";
 import ButtonPrimary from "../buttons/ButtonPrimary";
 
 const BlogCard1 = ({ blog, idx }) => {
-	const { title, desc, id, img, category, date, day, month } = blog || {};
+	const { title, desc, id, foto, category, date, day, month } = blog || {};
 	return (
 		<div className="blog-item wow fadeInUp" data-wow-delay={`0.${idx + 1}s`}>
 			<div className="blog-thumb">
 				<Link href={`/artikel/${id}`}>
 					{" "}
 					<Image
-						src={img ? img : "/images/artikel/blog-1.webp"}
+						src={foto ? foto : "/images/artikel/2.webp"}
 						alt="Images"
 						width={870}
 						height={450}

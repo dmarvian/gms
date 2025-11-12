@@ -9,7 +9,7 @@ const BlogCard4 = ({ blog, idx }) => {
 		title,
 		desc,
 		id,
-		img = "/images/artikel/blog-1.webp",
+		foto
 		category,
 		date,
 		day,

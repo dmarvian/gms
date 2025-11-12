@@ -17,7 +17,7 @@ const RecentBlogWidget = () => {
 							(
 								{
 									id,
-									smallImg = "/images/artikel/post-1.webp",
+									foto2,
 									title,
 									blogTopList,
 									comments,
@@ -30,7 +30,7 @@ const RecentBlogWidget = () => {
 										<Link href={`/artikel/${id}`}>
 											{" "}
 											<Image
-												src={smallImg}
+												src={foto2}
 												alt="Blog"
 												width={150}
 												height={150}
